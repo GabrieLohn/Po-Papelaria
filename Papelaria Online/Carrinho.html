@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="Carrinho.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/panda.ico">
+  <title>Produtos Po</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-openner"><span>0</span>🛒</div>
+  </header>
+
+  <main>
+    <h1><a class="back" href="Home.html">Po Papelaria</h1></a>
+    <div class="carrinho-area"></div>
+  </main>
+
+  <aside>
+    <div class="cart--area">
+
+      <div class="menu-closer">❌</div>
+      <h1>Seus Materiais</h1>
+      <div class="cart"></div>
+
+      <div class="cart--details">
+        <div class="cart-value subtotal">
+          <span>Subtotal</span>
+          <span class="cart-value-subtotal">R$ --</span>
+        </div>
+        <div class="cart-value desconto">
+          <span>Desconto (-10%)</span>
+          <span class="cart-value-desconto">R$ --</span>
+        </div>
+        <div class="cart-value total big">
+          <span>Total</span>
+          <span class="cart-value-total">R$ --</span>
+        </div>
+        <div class="cart--finalizar"><a style="text-decoration: none; color: #fff;" href="Login.html">Finalizar a compra</div></a>
+      </div>
+      <!--cart--detalhes-->
+
+    </div>
+    <!--cart--area-->
+  </aside>
+
+  <!--Modal-->
+  <div class="carrinho-modal">
+    <div class="carrinho-modal-content">
+      <div class="carrinho-info--cancelMobileButton" onclick=Modal.close()>
+        Voltar
+      </div>
+
+      <img class="carrinho-modal-img" src="" />
+
+      <div class="carrinho-info">
+        <h1>--</h1>
+        <div class="carrinho-info--desc">--</div>
+        <div class="carrinho-info--sizearea">
+          <div class="carrinho-info--sector">Cores</div>
+          <div class="carrinho-info--sizes">
+            <div data-key="0" class="carrinho-info--size">PADRÃO <span>--</span></div>
+            <div data-key="1" class="carrinho-info--size">VERMELHO <span>--</span></div>
+            <div data-key="2" class="carrinho-info--size selected">VERDE <span>--</span></div>
+            <div data-key="3" class="carrinho-info--size selected">AZUL <span>--</span></div>
+          </div>
+        </div>
+
+        <div class="carrinho-info--pricearea">
+          <div class="carrinho-info--sector">Preço</div>
+          <div class="carrinho-info--price">
+            <div class="carrinho-info--actualPrice">R$ --</div>
+            <div class="carrinho-info--qtarea">
+              <button class="carrinho-info--qtmenos">-</button>
+              <div class="carrinho-info--qt">1</div>
+              <button class="carrinho-info--qtmais">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carrinho-info--addButton">Adicionar ao carrinho</div>
+        <div class="carrinho-info--cancelButton" onclick=Modal.close()>
+          Cancelar
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal-->
+
+  <script type="text/javascript" src="./Carrinho de compras/js/Lista.js"></script>
+  <script type="text/javascript" src="./Carrinho de compras/js/modal.js"></script>
+  <script type="text/javascript" src="./Carrinho de compras/js/Cart.js"></script>
+  <script type="text/javascript" src="./Carrinho de compras/js/app.js"></script>
+</body>
+
+</html>
